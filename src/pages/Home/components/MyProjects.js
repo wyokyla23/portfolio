@@ -45,7 +45,7 @@ const listOfProjects = [
     title: "Random Book Generator",
     subtitle:
       "Generate a random book based on your existing preferences attached to your Firestore user",
-    link: "https://github.com/wyokyla23/RandomBookGenerator",
+    link: "https://random-book-generator.netlify.app",
   },
   {
     img: laptopImage,

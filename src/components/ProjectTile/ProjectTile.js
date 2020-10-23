@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import propTypes from "prop-types";
 import styled from "styled-components";
 
@@ -32,7 +31,7 @@ export default function ProjectTile({
       <div className="project-img"></div>
       <h2>{title}</h2>
       <p>{subtitle}</p>
-      <Link to={link}>VIEW PROJECT »</Link>
+      <a href={link} target="_blank">VIEW PROJECT »</a>
     </TileWrapper>
   );
 }

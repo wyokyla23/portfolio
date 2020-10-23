@@ -35,9 +35,6 @@ const ProjectsWrapper = styled.article`
     div.individual-tile {
       flex: 1;
       padding: 15px;
-      /* width: 50%;
-      box-sizing: border-box;
-      display: inline-block; */
     }
   }
 `;
@@ -48,14 +45,14 @@ const listOfProjects = [
     title: "Random Book Generator",
     subtitle:
       "Generate a random book based on your existing preferences attached to your Firestore user",
-    link: "https://www.google.com/",
+    link: "https://github.com/wyokyla23/RandomBookGenerator",
   },
   {
     img: laptopImage,
     title: "Accio School Supplies",
     subtitle:
       "Shop for your Hogwarts school supplies",
-    link: "https://www.google.com/",
+    link: "https://github.com/wyokyla23/accio-school-supplies",
   },
 ];
 

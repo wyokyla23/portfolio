@@ -2,9 +2,6 @@ import React from "react";
 import JumboTron from "../../components/layouts/JumboTron";
 import Section from "../../components/layouts/Section/Section";
 import laptopImage from "../../images/laptop-image.jpg";
-import githubImage from "../../images/githubImage.png";
-import twitterImage from "../../images/TwitterLogo.png";
-import styled from "styled-components";
 import Skills from "./components/Skills";
 import MyProjects from "./components/MyProjects";
 import Typography from '@material-ui/core/Typography'

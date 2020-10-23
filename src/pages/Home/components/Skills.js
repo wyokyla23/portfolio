@@ -1,6 +1,5 @@
 import { Typography, Grid } from "@material-ui/core";
 import React from "react";
-import styled from "styled-components";
 import makeStyles from '@material-ui/core/styles/makeStyles'
 import { SiJavascript, SiReact, SiRedux, SiFirebase, SiMaterialUi, SiCss3, SiGithub } from 'react-icons/si'
 import { GiPirateHook } from 'react-icons/gi'

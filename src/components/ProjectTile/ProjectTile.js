@@ -31,7 +31,7 @@ export default function ProjectTile({
       <div className="project-img"></div>
       <h2>{title}</h2>
       <p>{subtitle}</p>
-      <a href={link} target="_blank">VIEW PROJECT »</a>
+      <a href={link} rel="noopener noreferrer" target="_blank">VIEW PROJECT »</a>
     </TileWrapper>
   );
 }

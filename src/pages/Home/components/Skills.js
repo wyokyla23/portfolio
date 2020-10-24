@@ -80,16 +80,9 @@ export default function Skills() {
   return (
     <article className={classes.root}>
       <Typography className={classes.header} variant="h2">Technical Skills</Typography>
-      <Typography className={classes.body} variant="body1">
-        Through my study of wizardry, nunc mattis,
-        nunc et tincidunt pulvinar, dui turpis
-        pretium nisi, et ornare ipsum tortor et
-        ante. Nulla et interdum diam, a rutrum
-        nibh.
-      </Typography>
       <Grid className={classes.list} container component="ul">
         {mySkills.map(({ Icon, name, color }) => (
-          <Grid component="li" item xs={6} sm={4} md={3}>
+          <Grid key={name} component="li" item xs={6} sm={4} md={3}>
             <Typography variant="body1">
               <>
                 <Icon color={color} />

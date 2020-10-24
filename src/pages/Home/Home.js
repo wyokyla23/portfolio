@@ -1,21 +1,33 @@
 import React from "react";
 import JumboTron from "../../components/layouts/JumboTron";
 import Section from "../../components/layouts/Section/Section";
-import laptopImage from "../../images/laptop-image.jpg";
+import laptopImage from "../../images/laptop.png";
 import Skills from "./components/Skills";
 import MyProjects from "./components/MyProjects";
 import Typography from '@material-ui/core/Typography'
 import Grid from '@material-ui/core/Grid'
 import makeStyles from '@material-ui/core/styles/makeStyles'
+import IconButton from '@material-ui/core/IconButton'
+import GithubIcon from '@material-ui/icons/GitHub'
+import TwitterIcon from '@material-ui/icons/Twitter'
 
 const useStyles = makeStyles({
   root: {},
   headerContainer: {
+    position: 'relative',
     padding: 0,
   },
   bodyWrapper: {
     marginTop: 15,
-  }
+  },
+  iconWrapper: {
+    position: 'absolute',
+    top: 10,
+    right: 10,
+  },
+  twitterIconColor: {
+    color: "rgb(29 161 242)"
+  },
 })
 
 export default function Home() {
@@ -25,79 +37,47 @@ export default function Home() {
       <JumboTron>
         <Grid className={classes.headerContainer} container direction="column">
           <Typography variant="h2">
-            Hi I’m Kyla.
+            Hi, I’m Kyla.
           </Typography>
           <Typography variant="h2">
-            Front End Developer,
+            I'm a Frontend Developer
           </Typography>
           <Typography variant="h2">
             awaiting my Hogwarts letter.
           </Typography>
+          <div className={classes.iconWrapper}>
+            <IconButton component="a" href="https://github.com/wyokyla23" target="_blank" rel="noopener noreferrer">
+              <GithubIcon />
+            </IconButton>
+            <IconButton component="a" href="https://twitter.com/kyla_Christin_e" target="_blank" rel="noopener noreferrer">
+              <TwitterIcon className={classes.twitterIconColor} />
+            </IconButton>
+          </div>
         </Grid>
-        {/* <button>
-          <img
-            src={githubImage}
-            alt="Github Link"
-          ></img>
-        </button>
-        <button>
-          <img
-            src={twitterImage}
-            alt="Twitter Link"
-          ></img>
-        </button> */}
       </JumboTron>
       <Section img={laptopImage}>
         <Grid className={classes.bodyWrapper} container spacing={4}>
           <Grid item xs={12} md={6}>
             <Typography variant="body1">
-              Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit. Nunc eget
-              arcu at justo tincidunt bibendum a at
-              ex. Ut et euismod justo, id convallis
-              turpis. Maecenas fringilla tempus
-              ultricies. Aenean non ante sed lectus
-              auctor rhoncus. Ut commodo fringilla
-              nisi quis accumsan. Nulla euismod diam
-              sed nunc faucibus, a varius libero
-              cursus. Nunc mattis, nunc et tincidunt
-              pulvinar, dui turpis pretium nisi, et
-              ornare ipsum tortor et ante. Nulla et
-              interdum diam, a rutrum nibh.
-              Curabitur auctor, sapien nec rutrum
-              pretium, lacus dui aliquam libero,
-              vitae vehicula arcu nulla semper orci.
-              Ut auctor porttitor ultrices. Donec
-              rhoncus metus at lorem cursus
-              fermentum non volutpat mi. In viverra,
-              leo eget porttitor pretium, tortor
-              ante luctus diam, eget viverra libero
-              enim ac lacus. Maecenas blandit
-              hendrerit libero, vel vulputate felis
-              pellentesque congue.
+              I am a 32 year old self-taught frontend developer specializing in React.JS. In my previous years, I have been exposed to many unique locations, people, and ideas. Because of that, I have acquired many useful skills that have helped me to pursue a career in development.
             </Typography>
+            <ul>
+              <li><strong>I am flexible.</strong> I easily adapt to change and look forward to it because for me, change typically means progress.</li>
+              <li><strong>I am open-minded.</strong> I have a global perspective that allows me to view the world outside of myself. In this day and age, I believe it to be especially important. </li>
+              <li><strong>I am driven.</strong> When I decided to pursue a career in development, I made decisions that were necessary to guide me to success. I purchased the necessary items, and dedicated every waking free time to studying and creating projects. I recently made the decision to work part time so that I could dedicate even more of my time to development.</li>
+            </ul>
           </Grid>
           <Grid item xs={12} md={6}>
             <Typography variant="body1">
-              Etiam felis erat, scelerisque sed
-              imperdiet id, hendrerit quis leo.
-              Vestibulum lacinia ornare massa at
-              convallis. Morbi et orci dignissim,
-              eleifend arcu sit amet, pellentesque
-              nisl. Fusce pretium facilisis elit,
-              sed viverra neque sagittis tincidunt.
-              Nam tincidunt fermentum odio, a
-              lobortis nisl dapibus eu. Donec in
-              risus id justo ullamcorper
-              sollicitudin. Mauris malesuada, elit a
-              malesuada ornare, urna mi imperdiet
-              ex, non imperdiet nunc magna ut
-              turpis. Fusce bibendum elit eget dolor
-              sodales hendrerit. Sed sagittis quam
-              nec egestas vestibulum. Nulla lectus
-              quam, feugiat non odio et, maximus
-              sagittis nulla.
+              My life experiences have shaped me to be thoughtful, curious, determined, eager, comedic, and empathetic. As I continue to create projects, I hope to infuse my personality into them and provide a safe, meaningful, and fun experience for future users.
             </Typography>
+            <Typography variant='h6' style={{ fontWeight: 'bold' }}>Experiences Unique To Me:</Typography>
+            <ul>
+              <li>I had success playing Blackjack professionally.</li>
+              <li>I lived in Turkey and had the pleasure of experiencing diverse cultures. Unfortunately 9/11 happened during this time and my family was sent back to the United States.</li>
+              <li>I lived in Monterey, California, a beautiful hub full of rich culture. </li>
+
+            </ul>
           </Grid>
         </Grid>
         <Skills />

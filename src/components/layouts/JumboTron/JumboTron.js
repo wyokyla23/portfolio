@@ -1,4 +1,4 @@
-import React, { memo } from "react";
+import React from "react";
 import styled from "styled-components";
 
 const Jumbo = styled.div`
@@ -6,8 +6,8 @@ const Jumbo = styled.div`
   display: flex;
 `;
 
-export default memo(function JumboTron({
+export default function JumboTron({
   children,
 }) {
   return <Jumbo>{children}</Jumbo>;
-});
+};

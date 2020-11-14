@@ -11,7 +11,7 @@ import IconButton from '@material-ui/core/IconButton'
 import GithubIcon from '@material-ui/icons/GitHub'
 import TwitterIcon from '@material-ui/icons/Twitter'
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
   root: {},
   headerContainer: {
     position: 'relative',
@@ -28,7 +28,7 @@ const useStyles = makeStyles({
   twitterIconColor: {
     color: "rgb(29 161 242)"
   },
-})
+}))
 
 export default function Home() {
   const classes = useStyles()
@@ -59,7 +59,7 @@ export default function Home() {
         <Grid className={classes.bodyWrapper} container spacing={4}>
           <Grid item xs={12} md={6}>
             <Typography variant="body1">
-              I am a 32 year old self-taught frontend developer specializing in React.JS. In my previous years, I have been exposed to many unique locations, people, and ideas. Because of that, I have acquired many useful skills that have helped me to pursue a career in development.
+              I am a self-taught frontend developer specializing in React.JS. In my previous years, I have been exposed to many unique locations, people, and ideas. Because of that, I have acquired many useful skills that have helped me to pursue a career in development.
             </Typography>
             <ul>
               <li><strong>I am flexible.</strong> I easily adapt to change and look forward to it because for me, change typically means progress.</li>

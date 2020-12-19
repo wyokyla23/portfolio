@@ -10,6 +10,9 @@ import makeStyles from '@material-ui/core/styles/makeStyles'
 import IconButton from '@material-ui/core/IconButton'
 import GithubIcon from '@material-ui/icons/GitHub'
 import TwitterIcon from '@material-ui/icons/Twitter'
+import Button from "@material-ui/core/Button";
+import GetAppIcon from '@material-ui/icons/GetApp'
+import resume from '../../public/kyla-gregory-resume.pdf'
 
 const useStyles = makeStyles((theme) => ({
   root: {},
@@ -46,6 +49,9 @@ export default function Home() {
             awaiting my Hogwarts letter.
           </Typography>
           <div className={classes.iconWrapper}>
+            <Button href={resume} component="a" download variant='outlined' startIcon={<GetAppIcon />}>
+              Resumé
+            </Button>
             <IconButton component="a" href="https://github.com/wyokyla23" target="_blank" rel="noopener noreferrer">
               <GithubIcon />
             </IconButton>

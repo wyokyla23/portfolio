@@ -4,6 +4,7 @@ import Typography from '@material-ui/core/Typography'
 import Grid from '@material-ui/core/Grid'
 import ProjectTile from "../../../components/ProjectTile/ProjectTile";
 import accio from "../../../images/accio.png";
+import todo from '../../../images/todo.png'
 import rbg from "../../../images/rbg.png";
 import makeStyles from '@material-ui/core/styles/makeStyles'
 
@@ -51,11 +52,11 @@ const listOfProjects = [
     available: true
   },
   {
-    img: accio,
-    title: "Accio School Supplies",
+    img: todo,
+    title: "TypeScript/Postgres To-do App",
     subtitle:
-      "You've received your letter to Hogwarts! Accio School Supplies is your one stop shop to purchase all of your required school items. It was built using React, React Hooks, Context (for storing and sharing data from a centralized location), and Material-UI. Immediately upon entering the site, the user can begin adding items to their cart while crossing off their list. They can then check out, receive their total, and count down the days to when school begins! This project is still a work in progress.",
-    githubLink: "https://github.com/wyokyla23/accio-school-supplies",
+      "This is a sandbox I created to add new technical skills as I learn them. The app contains a simple to-do list but utilizes an Express and NodeJS server by making http requests, where the server queries the data stored in a postgres database. TypeScript is also used for type safety. ",
+    githubLink: "https://github.com/wyokyla23/sandbox-app",
     available: false
   },
 ];

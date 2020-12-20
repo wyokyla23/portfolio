@@ -27,6 +27,10 @@ const useStyles = makeStyles((theme) => ({
     position: 'absolute',
     top: 10,
     right: 10,
+    [theme.breakpoints.down('sm')]: {
+      right: -20,
+      top: 0
+    }
   },
   twitterIconColor: {
     color: "rgb(29 161 242)"
@@ -65,7 +69,7 @@ export default function Home() {
         <Grid className={classes.bodyWrapper} container spacing={4}>
           <Grid item xs={12} md={6}>
             <Typography variant="body1">
-              I am a self-taught frontend developer specializing in React.JS. In my previous years, I have been exposed to many unique locations, people, and ideas. Because of that, I have acquired many useful skills that have helped me to pursue a career in development.
+              I am a self-taught fullstack developer specializing in ReactJS. In my previous years, I have been exposed to many unique locations, people, and ideas. Because of that, I have acquired many useful skills that have helped me to pursue a career in development.
             </Typography>
             <ul>
               <li><strong>I am flexible.</strong> I easily adapt to change and look forward to it because for me, change typically means progress.</li>
@@ -77,12 +81,13 @@ export default function Home() {
             <Typography variant="body1">
               My life experiences have shaped me to be thoughtful, curious, determined, eager, comedic, and empathetic. As I continue to create projects, I hope to infuse my personality into them and provide a safe, meaningful, and fun experience for future users.
             </Typography>
+          </Grid>
+          <Grid item xs={12} md={6}>
             <Typography variant='h6' style={{ fontWeight: 'bold' }}>Experiences Unique To Me:</Typography>
             <ul>
               <li>I had success playing Blackjack professionally.</li>
               <li>I lived in Turkey and had the pleasure of experiencing diverse cultures. Unfortunately 9/11 happened during this time and my family was sent back to the United States.</li>
               <li>I lived in Monterey, California, a beautiful hub full of rich culture. </li>
-
             </ul>
           </Grid>
         </Grid>

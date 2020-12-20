@@ -62,7 +62,7 @@ const mySkills = [
   {
     Icon: SiMaterialUi,
     name: "Material-UI",
-    color: 'rgb(0 129 203)',
+    color: 'rgb(0 129 203)'
   },
   {
     Icon: SiCss3,
@@ -72,7 +72,7 @@ const mySkills = [
   {
     Icon: SiGithub,
     name: "Git",
-    color: 'black',
+    color: 'black'
   },
   {
     Icon: SiTypescript,
@@ -82,7 +82,7 @@ const mySkills = [
   {
     Icon: FaNode,
     name: "NodeJS",
-    color: '#28a745;'
+    color: '#28a745'
   },
   {
     Icon: SiPostgresql,

@@ -1,12 +1,11 @@
-import React from "react";
-import styled from "styled-components";
-import Typography from '@material-ui/core/Typography'
-import Grid from '@material-ui/core/Grid'
-import ProjectTile from "../../../components/ProjectTile/ProjectTile";
-import accio from "../../../images/accio.png";
-import todo from '../../../images/todo.png'
-import rbg from "../../../images/rbg.png";
-import makeStyles from '@material-ui/core/styles/makeStyles'
+import React from "react"
+import styled from "styled-components"
+import Typography from "@material-ui/core/Typography"
+import Grid from "@material-ui/core/Grid"
+import ProjectTile from "../../../components/ProjectTile/ProjectTile"
+import todo from "../../../images/todo.png"
+import rbg from "../../../images/rbg.png"
+import makeStyles from "@material-ui/core/styles/makeStyles"
 
 const useStyles = makeStyles((theme) => ({
   root: {},
@@ -55,7 +54,7 @@ const listOfProjects = [
     img: todo,
     title: "TypeScript/Postgres To-do App",
     subtitle:
-      "This is a sandbox I created to add new technical skills as I learn them. The app contains a simple to-do list but utilizes an Express and NodeJS server by making http requests, where the server queries the data stored in a postgres database. TypeScript is also used for type safety. ",
+      "I created this full stack application to add new technical skills as I learn them. The React app contains a simple to-do list but utilizes an Express and NodeJS server by making http requests, where the server queries the data stored in a postgres database. TypeScript is also used for type safety. ",
     githubLink: "https://github.com/wyokyla23/sandbox-app",
     available: false
   },

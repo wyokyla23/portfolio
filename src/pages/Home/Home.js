@@ -11,7 +11,6 @@ import IconButton from '@material-ui/core/IconButton'
 import GithubIcon from '@material-ui/icons/GitHub'
 import TwitterIcon from '@material-ui/icons/Twitter'
 import Button from "@material-ui/core/Button";
-import GetAppIcon from '@material-ui/icons/GetApp'
 import resume from '../../public/kyla-gregory-resume.pdf'
 
 const useStyles = makeStyles((theme) => ({

@@ -35,6 +35,11 @@ const useStyles = makeStyles((theme) => ({
   twitterIconColor: {
     color: "rgb(29 161 242)"
   },
+  resumeButton: {
+    [theme.breakpoints.down('xs')]: {
+      border: 'none'
+    }
+  }
 }))
 
 export default function Home() {
@@ -53,7 +58,7 @@ export default function Home() {
             awaiting my Hogwarts letter.
           </Typography>
           <div className={classes.iconWrapper}>
-            <Button href={resume} component="a" download variant='outlined' startIcon={<GetAppIcon />}>
+            <Button className={classes.resumeButton} href={resume} component="a" download variant='outlined'>
               Resumé
             </Button>
             <IconButton component="a" href="https://github.com/wyokyla23" target="_blank" rel="noopener noreferrer">

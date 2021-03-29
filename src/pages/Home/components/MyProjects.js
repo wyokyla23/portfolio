@@ -5,6 +5,7 @@ import Grid from "@material-ui/core/Grid"
 import ProjectTile from "../../../components/ProjectTile/ProjectTile"
 import todo from "../../../images/todo.png"
 import rbg from "../../../images/rbg.png"
+import HPTrivia from '../../../images/HPTrivia.png'
 import makeStyles from "@material-ui/core/styles/makeStyles"
 
 const useStyles = makeStyles((theme) => ({
@@ -58,6 +59,14 @@ const listOfProjects = [
     githubLink: "https://github.com/wyokyla23/sandbox-app",
     available: false
   },
+  {
+    img: HPTrivia,
+    title: "Harry Potter Trivia",
+    subtitle:
+      "This fun application was built with React.js, React-Router, Material-UI, and Lodash. Each question and its answers are stored in an object that is then randomly displayed one at a time.",
+    githubLink: "https://harrypottertrivia.netlify.app/",
+    available: true
+  }
 ];
 
 export default function MyProjects() {

@@ -64,7 +64,8 @@ const listOfProjects = [
     title: "Harry Potter Trivia",
     subtitle:
       "This fun application was built with React.js, React-Router, Material-UI, and Lodash. Each question and its answers are stored in an object that is then randomly displayed one at a time.",
-    githubLink: "https://harrypottertrivia.netlify.app/",
+    liveLink: "https://harrypottertrivia.netlify.app/",
+    githubLink: "https://github.com/wyokyla23/trivia",
     available: true
   }
 ];

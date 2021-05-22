@@ -1,7 +1,7 @@
 import { Typography, Grid } from "@material-ui/core";
 import React from "react";
 import makeStyles from '@material-ui/core/styles/makeStyles'
-import { SiJavascript, SiReact, SiRedux, SiFirebase, SiMaterialUi, SiCss3, SiGithub, SiTypescript, SiPostgresql } from 'react-icons/si'
+import { SiJavascript, SiReact, SiRedux, SiFirebase, SiMaterialUi, SiCss3, SiGithub, SiTypescript, SiPostgresql, SiJira, SiGooglecloud, SiJest, SiVueDotJs } from 'react-icons/si'
 import { FaNode } from 'react-icons/fa'
 import { GiPirateHook } from 'react-icons/gi'
 
@@ -88,7 +88,28 @@ const mySkills = [
     Icon: SiPostgresql,
     name: "PostgreSQL",
     color: '#336791'
+  },
+  {
+    Icon: SiJira,
+    name: "Jira",
+    color: '#0052CC'
+  },
+  {
+    Icon: SiGooglecloud,
+    name: "Google Cloud Platform",
+    color: 'black'
+  },
+  {
+    Icon: SiJest,
+    name: "Jest",
+    color: '#99425b'
+  },
+  {
+    Icon: SiVueDotJs,
+    name: "Vue",
+    color: '#3fb984'
   }
+
 ];
 
 export default function Skills() {

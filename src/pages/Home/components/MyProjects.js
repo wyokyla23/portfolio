@@ -6,6 +6,7 @@ import ProjectTile from "../../../components/ProjectTile/ProjectTile"
 import todo from "../../../images/todo.png"
 import rbg from "../../../images/rbg.png"
 import HPTrivia from '../../../images/HPTrivia.png'
+import puzzleSociety from '../../../images/puzzle-society.png'
 import makeStyles from "@material-ui/core/styles/makeStyles"
 
 const useStyles = makeStyles((theme) => ({
@@ -42,6 +43,15 @@ const ProjectsWrapper = styled.article`
 `;
 
 const listOfProjects = [
+  {
+    img: puzzleSociety,
+    title: "The Puzzle Society (PRIVATE REPO)",
+    subtitle:
+      "The Puzzle Society is where users go to play games and in the process, become a part of a secret society where playing games unlocks points, Society history secrets, and more! Play as a guest, a registered user, or a subscriber to fully maximize your experience. Invite friends, view your statistics, receive notifications on whether you've earned an achievement, etc. The Puzzle Society awaits you.",
+    liveLink: "https://www.puzzlesociety.com/",
+    githubLink: "https://www.puzzlesociety.com/",
+    available: true
+  },
   {
     img: rbg,
     title: "Random Book Generator",
